@@ -1,11 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
+      <h1>Expense Tracker App</h1>
     </div>
   );
 }
