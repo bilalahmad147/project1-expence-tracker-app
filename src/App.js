@@ -1,10 +1,15 @@
 import React from 'react';
 import './App.css';
+import { Header } from './components/Header.js';
+import { Balance } from './components/Balance.js';
 
 function App() {
   return (
     <div>
-      <h1>Expense Tracker App</h1>
+      <Header />
+      <div class="container">
+      <Balance />
+      </div>
     </div>
   );
 }
