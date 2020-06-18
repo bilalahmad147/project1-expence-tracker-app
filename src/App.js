@@ -6,9 +6,11 @@ import IncomeExpense from './incomeExpense.js';
 import TransactionList from './TransactionList';
 import AddTransaction from './AddTransaction';
 
+import GlobalProvider from './globalState';
+
 function App() {
   return (
-    <div>
+    <GlobalProvider>
       <Header />
       <div className="container">
       <Balance />
@@ -16,7 +18,7 @@ function App() {
       <TransactionList />
       <AddTransaction />
       </div>
-    </div>
+    </GlobalProvider>
   );
 }
 
