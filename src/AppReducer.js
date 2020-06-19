@@ -8,7 +8,8 @@ const AppReducer = (state, action) => {
             }
         case 'ADD_TRANS':
             return{
-
+                ...state,
+                transaction : [action.payload, ...state.transaction]
             }
         default:
             return state;
