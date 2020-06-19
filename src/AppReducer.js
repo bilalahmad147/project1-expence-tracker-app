@@ -1,4 +1,4 @@
-const AppReducer = (state, action) => {
+export default (state, action) => {
     switch (action.type) {
         case 'DEL_TRANS':
             return {
