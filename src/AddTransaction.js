@@ -8,10 +8,6 @@ const AddTransaction = () => {
     const [amount, setAmount] = useState(0);
 
     const onSubmit = e => {
-        if (amount === 0){
-            alert('Enter valid amount.');
-            return false;
-        }
         e.preventDefault();
 
         const newTransaction = {
